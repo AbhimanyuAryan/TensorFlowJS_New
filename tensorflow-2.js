@@ -15,10 +15,12 @@ const d = b.transpose();
 
 const c = a.matMul(d);
 console.log(c.data());
+console.log(c.toString());
+
 
 // tense.data().then((shit) => console.log(shit))
 
-// console.log(tense.dataSync());
+console.log(c.dataSync());
 // console.log(tense.get(1));  <- This doesn't work
 
 // const vtense = tf.variable(tense); // converting tensor into variable
